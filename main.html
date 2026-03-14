@@ -1,0 +1,71 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/stylesheet.css">
+        <title>SpicY</title>
+        <div class="heads">
+            <img src ="pic/logo.png" alt="SpicY logo" style=width:150px;height:150px;float:right;><br>
+            <h1><span>SpicY</span></h1>
+            <p><b><span>Spice Up your life</span></b></p>
+        </div>
+    </head>
+   <body style=" background-image:url(pic/1.jpg)">
+        
+        <div class="navi" >
+            <ul>
+                <li><a class="active" href="main.html">Home</a></li>
+                <li><a href="review.html">Give Review</a></li>
+                <li class=resi><a>Recipe</a>
+                    <div class="drop"> 
+                        <a href="pani.html">Pani-Puri</a>
+                        <a href="samosa.html">Samosa</a>
+                        <a href="vada.html">Vada Pav</a>
+                        <a href="dosa.html">Dosa</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="about">
+            <p>Indian cuisine reflects an 8,000-year history of various groups and cultures interacting with the Indian subcontinent, leading to diversity of flavours and regional cuisines found in modern-day India</p>
+            <p>Indian cuisine consists of a variety of regional and traditional cuisines native to the Indian subcontinent. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits.</p>
+        </div>
+        <div class="items">
+            <ul>
+                <li>
+                    <a href="https://youtu.be/fOu3wB0Inx8">Pani-Puri</a> 
+                    <img src ="pic/paniPuri.jpg" alt="Pani-Puri pic" style=width:160px;height:160px;>
+                </li><br>
+                <li>
+                    <a href="https://youtu.be/EKPAfUCn_Jo">Samosa</a> 
+                    <img src ="pic/samosa.jpg" alt="Samosa pic" style=width:160px;height:160px;>
+                </li><br>
+                <li>
+                    <a href="https://youtu.be/lrAzNrre5oo">Vada Pav</a> 
+                    <img src ="pic/vadapav.jpg" alt="Vada Pav pic" style=width:160px;height:160px;>
+                </li><br>
+                <li>
+                    <a href="https://youtu.be/2Tp78cWy80w">Dosa</a> 
+                    <img src ="pic/dosa.jpg" alt="Dosa pic" style=width:160px;height:160px;>
+                </li><br>
+            </ul> 
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <footer>
+                Copyright (C) 2020 All Right Reserved
+        </footer>
+    </body> 
+</html>

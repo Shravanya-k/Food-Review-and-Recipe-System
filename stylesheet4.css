@@ -1,0 +1,140 @@
+.heads h1{font-size:50px;
+    color:black;
+    text-align:center;
+    padding-left:100px;
+}
+.heads h1 span{
+    background-color:rgb(255,255,255,0.75);
+    padding:10px;
+}
+.heads p{
+    font-size:25px;
+    text-align:center;
+    padding-left:300px;
+}
+.heads p span{
+    background-color:rgb(255,255,255,0.75);
+    padding:5px;
+}
+body{
+    background-image:url(pic/1.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100%;
+    background-color:lightblue;
+}
+.about{
+    color:black;
+    background-color:rgb(255,255,255,0.75);
+    text-align:center;
+    font-size:20px;
+    padding-top:20px;
+    padding-right:25px;
+    padding-bottom:20px;
+    padding-left:25px;
+}
+.items{
+    color:black;
+    font-size:40px;
+}
+.items ul{
+    list-style-type:none;
+}
+.items ul li{
+    float:left;
+    padding:15px;
+    background-color:rgb(255,255,255,0.50);
+}
+  /*Navigation*/
+  .navi{
+    font-size: 20px;
+  }
+  .navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(145, 140, 140, 0.8);
+  }
+  
+  .navi li {
+    float: left;
+  }
+  
+  .navi li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navi li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .navi .active {
+    background-color: rgba(6, 255, 89, 0.8);
+  }
+  .navi .active:hover {
+    background-color: rgb(13, 129, 52);
+  }
+  /*drop-down*/
+  .drop{
+    display: none;
+  }
+  .resi:hover .drop{
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.75);
+  }
+  .drop a:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  /*New*/
+  .your p{
+    color:black;
+    background-color:rgb(255,255,255,0.75);
+    text-align:center;
+    font-size:50px;
+    padding-top:20px;
+    padding-right:25px;
+    padding-bottom:20px;
+    padding-left:25px;
+  }
+  .ph p{
+    color:black;
+    background-color:rgb(255,255,255,0.75);
+    text-align:center;
+    font-size:30px;
+    padding-top:20px;
+    padding-right:25px;
+    padding-bottom:20px;
+    padding-left:25px;
+  }
+  button{
+    background-color: rgba(119, 255, 160, 0.8);
+    font-size: 25px;
+    border:none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin: 20px;
+    position: relative;
+    left:45%
+  }
+  button a{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  button:hover{
+    background-color: rgb(46, 238, 104);
+  }
+  /*footer*/
+footer{
+    text-align:right;
+    padding-right:25px;
+    padding-bottom:10px;
+    background-color:rgb(255,255,255,0.50);
+}
